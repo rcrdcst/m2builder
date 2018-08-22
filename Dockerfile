@@ -1,7 +1,7 @@
 FROM centos:7
 
 RUN yum -y install epel-release
-RUN yum -y install -y openssh-clients git zip
+RUN yum -y install -y openssh-clients git rsync
 RUN yum -y install http://rpms.remirepo.net/enterprise/remi-release-7.rpm
 RUN yum-config-manager --enable remi-php70
 RUN yum -y install composer \
